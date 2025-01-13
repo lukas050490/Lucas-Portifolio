@@ -2,15 +2,33 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction:column;
+
+
+  @media (max-width: 1470px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 920px) {
+    padding: 10px;
+  }
+
   
    @media (max-width: 768px) {
     padding: 10px;
    }
+
+   @media (max-width: 680px) {
+    padding: 5px;
+  }
+
 `;
 
 export const Content = styled.div`
@@ -22,7 +40,7 @@ export const Content = styled.div`
       width: 400px;
       border-radius: 50%;
       margin-top: 150px;
-      margin-left: 400px;
+      margin-left: 200px;
       margin-right: 100px;
       transform: translateX(-900px) rotate(180deg);
       opacity: 0; 
@@ -47,7 +65,7 @@ export const Content = styled.div`
       h1 {
         color: #ffffff;
         margin-bottom: 20px;
-        margin-left: 200px;
+        margin-left: 50px;
         margin-top: 100px;
 
         span {
@@ -57,10 +75,11 @@ export const Content = styled.div`
       }
       p {
         color: #ffffff;
-        margin-right: 200px;
+        margin-right: 50px;
         margin-left: 50px;
         margin-bottom: 100px;
         font-size: 26px;
+        
 
         span {
           color: #23c483;
@@ -123,7 +142,7 @@ export const Content = styled.div`
   background: #ffffff;
   width:500px;
   height: 400px;
-  margin-top: 100%;
+  margin-top: 160%;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -168,6 +187,90 @@ export const Content = styled.div`
   visibility: hidden;
 }
 
+@media (max-width: 1470px) {
+    .myfoto {
+      height: 300px;
+      width: 300px;
+    }
+
+    .group div {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        margin-left: 30px;
+        font-size: 20px;
+      }
+    }
+  }
+  
+
+  @media (max-width: 1024px) {
+    
+    .formulario {
+      margin-top: 120%;
+      margin-left: 20%;
+    }
+
+    .myfoto {
+      height: 250px;
+      width: 250px;
+    }
+
+    .group div {
+      h1 {
+        margin-left: 100px;
+        font-size: 35px;
+      }
+
+      p {
+        margin-left: 20px;
+        margin-right: 50px;
+        font-size: 18px;
+      }
+    }
+  }
+  
+  @media (max-width: 820px) {
+    flex-direction: column;
+    align-items: center;
+
+    .myfoto {
+      height: 200px;
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    .group div {
+
+      margin-left: 300px;
+      margin-right:30px;
+
+      h1 {
+        margin-left: 0;
+        font-size: 30px;
+      }
+
+      p {
+        margin: 10px 0 ;
+        font-size: 16px;
+      }
+
+    }
+
+    .About {
+      margin-bottom: 50px;
+    }
+
+    .formulario {
+      margin-top: 10%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+
 
  @media (max-width: 768px) {
     display: flex;
@@ -177,8 +280,8 @@ export const Content = styled.div`
 
 
     .myfoto {
-      height: 120px;
-      width: 120px; 
+      height: 150px;
+      width: 150px; 
       margin-top: 20px; 
       margin-right: 0;
       margin-left: 0; 
@@ -190,23 +293,32 @@ export const Content = styled.div`
       
       .AboutFirst {
         margin: 0;
+
+        p {
+          font-size: 18px;
+          line-height: 40px;
+        }
       }
 
-      div {
-        margin-bottom: 180px;
+      .About {
+        margin-bottom: 100px;
+        margin-left: 10px;
+        padding-right: 25px;  
 
 
-        h1 {
-           margin-left: 0;
-           font-size: 20px; 
-          span {
-            font-size: 28px; 
-          }
+        h2 {
+          margin-left: 0;
+          font-size: 35px; 
         }
 
         p {
           margin: 10px 0; 
-          font-size: 12px; 
+          font-size: 18px; 
+          line-height: 30px;
+
+          span {
+            font-size: 20px; 
+          }
         }
       }
 
@@ -218,11 +330,10 @@ export const Content = styled.div`
     }
 
     .formulario {
-      margin-top: 140%;
-      width: 90%; 
-      height: auto; 
+      margin-top: 100%; 
+      top: 170%;
       gap: 10px; 
-      transform: translate(-40%, -40%); 
+      transform: translate(-60%, -60%); 
       
       p {
         font-size: 12px;
@@ -243,16 +354,131 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width: 680px) {
+    .myfoto {
+      height: 150px;
+      width: 150px;
+    }
+
+    .group div {
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width:430px) {
+
+    .myfoto {
+      margin-top: 130px;
+    }
+    
+    .group div {
+      h1 {
+        font-size: 22px;
+
+        span {
+          font-size: 40px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .formulario {
+      margin-top: 540%; 
+      width: 300px;
+      transform: translate(-60%, -60%); 
+      
+    }
+    
+  }
+
+  @media (max-width:414px) {
+
+    .formulario {
+      margin-top: 630%; 
+      width: 300px;
+      transform: translate(-60%, -60%); 
+    }
+  }
+  
+  @media (max-width: 412px) {
+    .myfoto {
+      height: 120px;
+      width: 120px;
+    }
+
+    .group div {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .formulario {
+      margin-top: 630%; 
+      width: 300px;
+      transform: translate(-60%, -60%); 
+      
+
+    }
+  }
+
+  @media (max-width: 390px) {
+    .myfoto {
+      height: 100px;
+      width: 100px;
+    }
+
+    .group div {
+      h1 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .formulario {
+      margin-top: 730%; 
+      width: 300px;
+      transform: translate(-60%, -60%); 
+      
+    }
+
+  }
+
+
+  @media (max-width: 360px) {
+    .formulario {
+      margin-top: 940%; 
+      width: 300px;
+      transform: translate(-60%, -60%); 
+      
+    }
+  }
+
 
 `;
-export const  Containertwo  = styled.div`
+export const Containertwo = styled.div`
   background-image: url(${(props) => props.image});
   background-repeat:no-repeat;
   background-position: center;
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${(props) => props.image});
-  background-position-x: -400px;
-  background-position-y: 1100px;
+  background-position-x: -200px;
+  background-position-y: 1610px;
    
    
   .Icons {
@@ -283,6 +509,34 @@ export const  Containertwo  = styled.div`
     }
 
   }
+
+  @media (max-width:1024px) {
+    background-position-y: 2400px;
+    background-position-x: -120px;
+  }
+
+  @media (max-width: 820px) {
+    
+    background-position-x: -50px;
+    background-position-y: 1300px;
+
+    .Icons {
+      gap: 15px;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      img:hover {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+  }
+
+
   @media (max-width: 768px) {
       background-position: center;
       background-position-y: 1650px;
@@ -310,4 +564,84 @@ export const  Containertwo  = styled.div`
       }
     }
   }
+  
+  @media (max-width: 680px) {
+    background-position-y: 1700px;
+    background-position-x: -90px;
+
+    .Icons {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      img:hover {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  
+  @media (max-width:430px) {
+    background-position-y: 3660px;
+    background-position-x: -60px;
+    
+
+    .Icons {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      img:hover {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  @media (max-width:414px) {
+    
+    background-position-y: 3890px;
+    background-position-x: -60px;
+    
+  }
+
+  @media (max-width:412px) {
+    
+    background-position-y: 3860px;
+    background-position-x: -60px;
+    
+  }
+
+  @media (max-width: 390px) {
+
+    background-position-y: 4010px;
+    background-position-x: -60px;
+
+    .Icons {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      img:hover {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+    @media (max-width: 375px) {
+      background-position-y: 4230px;
+      background-position-x: -60px;
+    }
+
+    @media (max-width: 360px) {
+      background-position-y: 4480px;
+      background-position-x: -60px;
+    }
+   
+
+ 
 `

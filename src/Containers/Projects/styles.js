@@ -4,6 +4,7 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   margin-left: 300px;
+  margin-bottom: 50px;
   
   
  
@@ -11,17 +12,14 @@ export const Container = styled.div`
      display: grid;
      grid-template-columns: 50% 50%;
      margin-right: 200px;
+     margin-bottom: 20px;
+     
     
     
      .div-container {
       margin-top: 15px;
       margin-bottom: 15px;
 
-      video {
-        width: 600px;
-        height: 400px;
-        
-      }
      }
 
 
@@ -36,16 +34,16 @@ export const Container = styled.div`
 
   img {
     margin-top: 50px;
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     border: 3px solid #23c483;
   }
 
   .book {
     position: relative;
     border-radius: 10px;
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     background-color: whitesmoke;
     -webkit-box-shadow: 1px 1px 12px #000;
     box-shadow: 1px 1px 12px #000;
@@ -68,11 +66,14 @@ export const Container = styled.div`
     margin-top: 20px;
 
     button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 1.3em 3em;
       margin-top: 30px;
-      width: 250px;
-      margin-bottom: 15px;
-      font-size: 12px;
+      width: 100px;
+      height:30px;
+      font-size: 8px;
       text-transform: uppercase;
       letter-spacing: 2.5px;
       font-weight: 500;
@@ -141,8 +142,51 @@ export const Container = styled.div`
   }
 
   p {
-    font-size: 20px;
+    font-size: 12px;
     margin-left: 40px;
+  }
+
+  @media (max-width: 1024px) {
+    .container-foto {
+      display: flex;
+      flex-direction: column;  
+    }
+
+    .book {
+      width: 520px;
+      height: 420px;
+
+
+      button {
+        width: 200px;
+        font-size: 10px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        }
+      }
+
+      img {
+        width: 520px;
+        height: 420px;
+        
+     }
+
+     p {
+        font-size: 16px;
+        margin-left:40px;
+     }
+  }
+
+  @media (max-width: 820px) {
+    .book {
+      width: 420px;
+      height: 320px;
+    }
+
+    img {
+      width: 420px;
+      height: 320px;
+    }
   }
 
   @media (max-width: 768px) {
@@ -151,34 +195,38 @@ export const Container = styled.div`
     
       .div-container {
         padding-bottom: 50px;
+        margin-left: 40px;
+        
         
       }
      
 
      .container-foto {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 50% 50%;
         margin-left: 10px;
-       
+        gap: 60px;
         
       }
       
       .book {
         width: 320px;
         height: 220px;
+      
 
 
         button {
           width: 150px;
           font-size: 8px;
           margin-top: 10px;
-         margin-bottom: 0;
+          margin-bottom: 0;
         }
      }
 
      img {
         width: 320px;
         height: 220px;
+        
         
      }
 
@@ -187,4 +235,34 @@ export const Container = styled.div`
         margin-left:40px;
      }
   }
+
+  @media (max-width: 430px) {
+
+
+    .container-foto {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-top: 100px;
+        
+      }
+
+  }
+
+  @media (max-width: 360px) {
+    .container-foto { 
+      margin-left: 0;    
+    }
+
+    .container-foto h2 {
+      font-size: 20px;
+    }
+
+    .div-container {
+        margin-left: 15px;
+      }
+
+  }
+
+  
 `

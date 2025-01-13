@@ -19,8 +19,8 @@ function Modal({setShowModal, video}) {
             className="icon"
             style={{
                 position: 'absolute',
-                top: '100px',
-                right: '400px',
+                top: '40px',
+                right: '200px',
               }}
               size="50px"
               color="white" />

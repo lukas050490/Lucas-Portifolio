@@ -11,17 +11,30 @@ justify-content: space-around;
 align-items: center;
 padding: 10px;
 background: linear-gradient(251deg, rgba(44,148,23,0.9641981792717087) 0%, rgba(18,37,230,1) 100%);
+background-position: cover;
 
 
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 100%;
     height: 80px;
     position: relative;
     flex-direction: row; 
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
   }
+
+  @media(max-width: 430px) {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+  }
+
+  @media(max-width: 390px) {
+    height: 100px;
+  }
+
+
 `
 
 export const Menu = styled.ul`
@@ -52,14 +65,47 @@ export const Menu = styled.ul`
 
 @media (max-width: 768px) {
     flex-direction: row; 
-    gap: 10px; 
+    gap: 30px; 
     
     .socialIcons {
       flex-direction: row; 
-      gap: 8px;
-      font-size: 30px; 
-      margin-top: 60px;
+      gap: 20px; 
+      margin-left:170px;
       
+    }
+  }
+
+  @media (max-width:430px) {
+    gap:10px;
+    width: 100%;
+    
+
+    .socialIcons {
+      gap:5px;
+      font-size: 25px;
+      margin-top: 15px;
+      margin-left:30px;
+    }
+  }
+
+  @media (max-width:412px) {
+    gap:10px;
+    width: 100%;
+    
+
+    .socialIcons {
+      gap:5px;
+      font-size: 25px;
+      margin-top: 15px;
+    }
+  }
+
+  @media(max-width: 390px) {
+    
+    .socialIcons {
+      gap: 5px;
+      font-size:20px;
+      flex-direction: column;
     }
   }
 `
@@ -92,6 +138,13 @@ export const Li = styled.li`
   }
 
   @media (max-width: 768px) {
-    font-size: 14px; 
+    font-size: 20px; 
+   
+  }
+
+  @media (max-width: 430px) {
+    font-size: 16px;
+    letter-spacing: 2px; 
+   
   }
 `
