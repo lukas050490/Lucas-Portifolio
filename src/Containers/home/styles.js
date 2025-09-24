@@ -35,12 +35,12 @@ export const Content = styled.div`
    display: flex;
      
 
-  .myfoto {
+  .myLogo {
       height: 400px;
       width: 400px;
       border-radius: 50%;
       margin-top: 150px;
-      margin-left: 200px;
+      margin-left: 220px;
       margin-right: 100px;
       transform: translateX(-900px) rotate(180deg);
       opacity: 0; 
@@ -150,7 +150,7 @@ export const Content = styled.div`
   border-radius: 10px;
   z-index: 4;
   position: absolute; 
-  top: 160%; 
+  top: 100%; 
   left: 40%; 
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -188,7 +188,7 @@ export const Content = styled.div`
 }
 
 @media (max-width: 1470px) {
-    .myfoto {
+    .myLogo {
       height: 300px;
       width: 300px;
     }
@@ -213,7 +213,7 @@ export const Content = styled.div`
       margin-left: 20%;
     }
 
-    .myfoto {
+    .myLogo {
       height: 250px;
       width: 250px;
     }
@@ -236,7 +236,7 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
 
-    .myfoto {
+    .myLogo {
       height: 200px;
       width: 200px;
       margin-top: 20px;
@@ -279,7 +279,7 @@ export const Content = styled.div`
 
 
 
-    .myfoto {
+    .myLogo {
       height: 150px;
       width: 150px; 
       margin-top: 20px; 
@@ -355,7 +355,7 @@ export const Content = styled.div`
   }
 
   @media (max-width: 680px) {
-    .myfoto {
+    .myLogo {
       height: 150px;
       width: 150px;
     }
@@ -373,7 +373,7 @@ export const Content = styled.div`
 
   @media (max-width:430px) {
 
-    .myfoto {
+    .myLogo {
       margin-top: 130px;
     }
     
@@ -410,7 +410,7 @@ export const Content = styled.div`
   }
   
   @media (max-width: 412px) {
-    .myfoto {
+    .myLogo {
       height: 120px;
       width: 120px;
     }
@@ -435,7 +435,7 @@ export const Content = styled.div`
   }
 
   @media (max-width: 390px) {
-    .myfoto {
+    .myLogo {
       height: 100px;
       width: 100px;
     }
@@ -451,7 +451,7 @@ export const Content = styled.div`
     }
 
     .formulario {
-      margin-top: 730%; 
+      margin-top: 740%; 
       width: 300px;
       transform: translate(-60%, -60%); 
       
@@ -462,7 +462,7 @@ export const Content = styled.div`
 
   @media (max-width: 360px) {
     .formulario {
-      margin-top: 940%; 
+      margin-top: 950%; 
       width: 300px;
       transform: translate(-60%, -60%); 
       
@@ -583,7 +583,7 @@ export const Containertwo = styled.div`
   }
   
   @media (max-width:430px) {
-    background-position-y: 3660px;
+    background-position-y: 3760px;
     background-position-x: -60px;
     
 
@@ -602,21 +602,21 @@ export const Containertwo = styled.div`
 
   @media (max-width:414px) {
     
-    background-position-y: 3890px;
+    background-position-y: 3990px;
     background-position-x: -60px;
     
   }
 
   @media (max-width:412px) {
     
-    background-position-y: 3860px;
+    background-position-y: 3960px;
     background-position-x: -60px;
     
   }
 
   @media (max-width: 390px) {
 
-    background-position-y: 4010px;
+    background-position-y: 4050px;
     background-position-x: -60px;
 
     .Icons {
@@ -633,12 +633,12 @@ export const Containertwo = styled.div`
   }
 
     @media (max-width: 375px) {
-      background-position-y: 4230px;
+      background-position-y: 4440px;
       background-position-x: -60px;
     }
 
     @media (max-width: 360px) {
-      background-position-y: 4480px;
+      background-position-y: 4510px;
       background-position-x: -60px;
     }
    

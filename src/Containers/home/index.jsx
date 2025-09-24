@@ -18,7 +18,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 
-const FILE_URL = "MODELODECV-DEVCLUB.pdf"
+const FILE_URL = "Lucas-Alexandre-Silva.pdf"
 
 function Home() {
   const [formVisible, setFormVisible] = useState(false)
@@ -48,15 +48,15 @@ function Home() {
 
   useLayoutEffect(() => {
 
-    gsap.to(".myfoto", {
-      x: 0,
-      opacity: 1,
-      rotate: "6s",
-      duration: 2,
-    })
+    gsap.fromTo(
+      ".myLogo",
+      { x: -900, opacity: 0, rotate: -720 },
+      { x: 0, opacity: 1, rotate: 0, duration: 4, ease: "power3.out" }
+    );
+
 
     return () => {
-      gsap.killTweensOf(".myfoto")
+      gsap.killTweensOf(".myLogo")
     }
   }, [])
 
@@ -99,7 +99,7 @@ function Home() {
         <Container>
           <Containertwo image={Imagetwo}>
             <Content>
-              <img className="myfoto" src={LogoLucas} alt="minha foto" />
+              <img className="myLogo" src={LogoLucas} alt="minha logo" />
               <div className="group">
                 <div className="AboutFirst">
                   <h1 ref={titleRef}>Meu nome é <span className="gradient-text">&lt;Lucas/&gt;</span></h1>
