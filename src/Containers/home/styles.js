@@ -478,7 +478,7 @@ export const Containertwo = styled.div`
   background-size: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${(props) => props.image});
   background-position-x: -200px;
-  background-position-y: 1610px;
+  background-position-y: 1830px;
    
    
   .Icons {
