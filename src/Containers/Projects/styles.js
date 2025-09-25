@@ -210,8 +210,9 @@ export const Container = styled.div`
       }
       
       .book {
-        width: 320px;
-        height: 220px;
+        width: 350px; 
+        height: 300px; 
+      
       
 
 
@@ -224,8 +225,8 @@ export const Container = styled.div`
      }
 
      img {
-        width: 320px;
-        height: 220px;
+        width: 350px;
+        height: 300px;
         
         
      }
@@ -245,8 +246,8 @@ export const Container = styled.div`
       margin-left: 10px;
       margin-top: 100px;
         
-      }
-
+    }
+      
   }
 
   @media (max-width: 360px) {

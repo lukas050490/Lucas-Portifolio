@@ -356,8 +356,8 @@ export const Content = styled.div`
 
   @media (max-width: 680px) {
     .myLogo {
-      height: 150px;
-      width: 150px;
+      height: 200px;
+      width: 200px;
     }
 
     .group div {
@@ -392,7 +392,7 @@ export const Content = styled.div`
     }
 
     .formulario {
-      margin-top: 540%; 
+      margin-top: 740%; 
       width: 300px;
       transform: translate(-60%, -60%); 
       
@@ -409,11 +409,7 @@ export const Content = styled.div`
     }
   }
   
-  @media (max-width: 412px) {
-    .myLogo {
-      height: 120px;
-      width: 120px;
-    }
+  @media (max-width: 414px) {
 
     .group div {
       h1 {
@@ -426,7 +422,7 @@ export const Content = styled.div`
     }
 
     .formulario {
-      margin-top: 630%; 
+      margin-top: 800%; 
       width: 300px;
       transform: translate(-60%, -60%); 
       
@@ -435,10 +431,6 @@ export const Content = styled.div`
   }
 
   @media (max-width: 390px) {
-    .myLogo {
-      height: 100px;
-      width: 100px;
-    }
 
     .group div {
       h1 {
@@ -451,7 +443,7 @@ export const Content = styled.div`
     }
 
     .formulario {
-      margin-top: 740%; 
+      margin-top: 900%; 
       width: 300px;
       transform: translate(-60%, -60%); 
       
@@ -462,7 +454,7 @@ export const Content = styled.div`
 
   @media (max-width: 360px) {
     .formulario {
-      margin-top: 950%; 
+      margin-top: 1100%; 
       width: 300px;
       transform: translate(-60%, -60%); 
       
@@ -583,7 +575,7 @@ export const Containertwo = styled.div`
   }
   
   @media (max-width:430px) {
-    background-position-y: 3760px;
+    background-position-y: 3720px;
     background-position-x: -60px;
     
 
@@ -602,21 +594,21 @@ export const Containertwo = styled.div`
 
   @media (max-width:414px) {
     
-    background-position-y: 3990px;
+    background-position-y: 3950px;
     background-position-x: -60px;
     
   }
 
   @media (max-width:412px) {
     
-    background-position-y: 3960px;
+    background-position-y: 3920px;
     background-position-x: -60px;
     
   }
 
   @media (max-width: 390px) {
 
-    background-position-y: 4050px;
+    background-position-y: 4010px;
     background-position-x: -60px;
 
     .Icons {
@@ -633,12 +625,12 @@ export const Containertwo = styled.div`
   }
 
     @media (max-width: 375px) {
-      background-position-y: 4440px;
+      background-position-y: 4400px;
       background-position-x: -60px;
     }
 
     @media (max-width: 360px) {
-      background-position-y: 4510px;
+      background-position-y: 4490px;
       background-position-x: -60px;
     }
    
